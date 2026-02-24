@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>1st Grade Social Studies Scope & Sequence</title>
+<title>2nd Grade Social Studies Scope & Sequence</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
 
@@ -11,9 +11,9 @@
 
   body {
     font-family: 'Nunito', sans-serif;
-    background: linear-gradient(135deg, #fef3e8 0%, #e8f4fd 50%, #f0e8fe 100%);
+    background: linear-gradient(135deg, #fef3e8 0%, #e8fdf4 50%, #e8effe 100%);
     min-height: 100vh;
-    padding: 30px 20px 50px;
+    padding: 30px 20px 60px;
   }
 
   /* ── Header ── */
@@ -23,7 +23,7 @@
   }
   .header .grade-badge {
     display: inline-block;
-    background: linear-gradient(135deg, #f97316, #a855f7);
+    background: linear-gradient(135deg, #10b981, #3b82f6);
     color: white;
     font-size: 13px;
     font-weight: 800;
@@ -36,11 +36,11 @@
   .header h1 {
     font-size: 2.2rem;
     font-weight: 900;
-    color: #1e1e4a;
+    color: #1e3a5f;
     line-height: 1.2;
   }
   .header h1 span {
-    background: linear-gradient(135deg, #f97316, #a855f7);
+    background: linear-gradient(135deg, #10b981, #3b82f6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -58,116 +58,121 @@
     flex-direction: column;
     align-items: center;
     gap: 0;
-    max-width: 920px;
+    max-width: 960px;
     margin: 0 auto;
   }
 
-  /* ── Unit blocks ── */
+  /* ── Unit block ── */
   .unit-block {
     width: 100%;
     border-radius: 24px;
     padding: 28px 32px;
+    position: relative;
     box-shadow: 0 8px 30px rgba(0,0,0,0.10);
     transition: transform 0.2s, box-shadow 0.2s;
   }
   .unit-block:hover {
     transform: translateY(-3px);
-    box-shadow: 0 16px 40px rgba(0,0,0,0.14);
+    box-shadow: 0 14px 40px rgba(0,0,0,0.15);
   }
 
-  /* Unit colour themes */
-  .unit-1 { background: linear-gradient(135deg, #fff7ed, #ffe4cc); border: 2px solid #f97316; }
-  .unit-2 { background: linear-gradient(135deg, #eff6ff, #dbeafe); border: 2px solid #3b82f6; }
-  .unit-3 { background: linear-gradient(135deg, #f5f3ff, #ede9fe); border: 2px solid #8b5cf6; }
+  /* Unit color themes */
+  .unit-1  { background: linear-gradient(135deg, #fff7ed, #fef3c7); border: 2px solid #f97316; }
+  .unit-2  { background: linear-gradient(135deg, #ecfdf5, #d1fae5); border: 2px solid #10b981; }
+  .unit-3  { background: linear-gradient(135deg, #eff6ff, #dbeafe); border: 2px solid #3b82f6; }
+  .unit-4  { background: linear-gradient(135deg, #fdf4ff, #fae8ff); border: 2px solid #a855f7; }
+  .unit-5  { background: linear-gradient(135deg, #fff1f2, #ffe4e6); border: 2px solid #f43f5e; }
+  .unit-6  { background: linear-gradient(135deg, #fff7ed, #ffedd5); border: 2px solid #fb923c; }
+  .unit-7  { background: linear-gradient(135deg, #f0fdf4, #dcfce7); border: 2px solid #22c55e; }
+  .unit-8  { background: linear-gradient(135deg, #f0f9ff, #e0f2fe); border: 2px solid #0ea5e9; }
+  .unit-9  { background: linear-gradient(135deg, #fefce8, #fef9c3); border: 2px solid #eab308; }
+  .unit-10 { background: linear-gradient(135deg, #f5f3ff, #ede9fe); border: 2px solid #7c3aed; }
+  .unit-11 { background: linear-gradient(135deg, #fff0f6, #fce7f3); border: 2px solid #ec4899; }
 
   /* ── Unit header ── */
   .unit-header {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 14px;
     margin-bottom: 20px;
   }
   .unit-icon {
-    font-size: 2.6rem;
-    width: 64px;
-    height: 64px;
-    border-radius: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+    font-size: 2.2rem;
+    line-height: 1;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
   }
-  .unit-1 .unit-icon { background: linear-gradient(135deg, #fed7aa, #fb923c); }
-  .unit-2 .unit-icon { background: linear-gradient(135deg, #bfdbfe, #60a5fa); }
-  .unit-3 .unit-icon { background: linear-gradient(135deg, #ddd6fe, #a78bfa); }
-
   .unit-meta { flex: 1; }
-  .unit-label {
-    font-size: 11px;
+  .unit-number {
+    font-size: 0.72rem;
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 3px;
+    opacity: 0.65;
+    color: #1e3a5f;
   }
-  .unit-1 .unit-label { color: #c2410c; }
-  .unit-2 .unit-label { color: #1d4ed8; }
-  .unit-3 .unit-label { color: #6d28d9; }
-
   .unit-title {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 900;
-    color: #1e1e4a;
-    line-height: 1.25;
+    color: #1e3a5f;
+    line-height: 1.2;
   }
 
   /* ── Lesson grid ── */
   .lessons-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 12px;
   }
 
-  /* ── Lesson cards ── */
+  /* ── Lesson card ── */
   .lesson-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
     background: rgba(255,255,255,0.82);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(8px);
     border-radius: 14px;
     padding: 14px 16px;
     text-decoration: none;
-    color: inherit;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
     border: 1.5px solid rgba(255,255,255,0.9);
     box-shadow: 0 2px 10px rgba(0,0,0,0.07);
     transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
   }
   .lesson-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.13);
     background: rgba(255,255,255,0.97);
   }
-
   .lesson-num {
-    font-size: 11px;
+    font-size: 0.68rem;
     font-weight: 800;
-    letter-spacing: 0.5px;
-    padding: 4px 9px;
+    color: white;
+    background: #6b7280;
     border-radius: 8px;
+    padding: 3px 7px;
     white-space: nowrap;
+    margin-top: 2px;
+    letter-spacing: 0.5px;
     flex-shrink: 0;
-    margin-top: 1px;
   }
-  .unit-1 .lesson-num { background: #fed7aa; color: #9a3412; }
-  .unit-2 .lesson-num { background: #bfdbfe; color: #1e3a8a; }
-  .unit-3 .lesson-num { background: #ddd6fe; color: #4c1d95; }
+  /* Badge colors per unit */
+  .unit-1  .lesson-num { background: #f97316; }
+  .unit-2  .lesson-num { background: #10b981; }
+  .unit-3  .lesson-num { background: #3b82f6; }
+  .unit-4  .lesson-num { background: #a855f7; }
+  .unit-5  .lesson-num { background: #f43f5e; }
+  .unit-6  .lesson-num { background: #fb923c; }
+  .unit-7  .lesson-num { background: #22c55e; }
+  .unit-8  .lesson-num { background: #0ea5e9; }
+  .unit-9  .lesson-num { background: #eab308; }
+  .unit-10 .lesson-num { background: #7c3aed; }
+  .unit-11 .lesson-num { background: #ec4899; }
 
   .lesson-text { flex: 1; }
   .lesson-title {
     font-size: 0.85rem;
     font-weight: 700;
-    color: #1e1e4a;
+    color: #1e293b;
     line-height: 1.35;
   }
   .lesson-subtitle {
@@ -175,228 +180,389 @@
     font-weight: 700;
     color: #16a34a;
     line-height: 1.35;
-    margin-top: 1px;
+    margin-top: 2px;
   }
 
-  /* ── Flowing arrows ── */
+  /* ── Arrow connector ── */
   .arrow-connector {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 0;
+    margin: 4px 0;
     gap: 0;
   }
   .arrow-line {
     width: 4px;
     height: 28px;
+    background: linear-gradient(to bottom, #cbd5e1, #94a3b8);
     border-radius: 2px;
   }
-  .arrow-1 { background: linear-gradient(to bottom, #f97316, #3b82f6); }
-  .arrow-2 { background: linear-gradient(to bottom, #3b82f6, #8b5cf6); }
-
   .arrow-head {
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
+    border-top: 14px solid #94a3b8;
   }
-  .arrow-1 .arrow-head { border-top: 14px solid #3b82f6; }
-  .arrow-2 .arrow-head { border-top: 14px solid #8b5cf6; }
 
   /* ── Footer ── */
   .footer {
     text-align: center;
-    margin-top: 40px;
-    color: #9ca3af;
-    font-size: 0.82rem;
+    margin-top: 48px;
+    color: #94a3b8;
+    font-size: 0.8rem;
     font-weight: 600;
+    letter-spacing: 0.5px;
   }
 </style>
 </head>
 <body>
 
+<!-- ── Header ── -->
 <div class="header">
-  <div class="grade-badge">1st Grade · Social Studies</div>
-  <h1>The Story of <span>Family</span></h1>
-  <p>Scope &amp; Sequence · 3 Units · 16 Lessons &nbsp;|&nbsp; Click any lesson card to open the lesson</p>
+  <div class="grade-badge">2nd Grade · Social Studies</div>
+  <h1>The Story of <span>Community</span></h1>
+  <p>Scope &amp; Sequence · 11 Units · 22 Lessons</p>
 </div>
 
 <div class="flow-container">
 
-  <!-- ═══════════ UNIT 1 ═══════════ -->
+  <!-- ═══ UNIT 1 ═══ -->
   <div class="unit-block unit-1">
-    <div class="unit-header">
-      <div class="unit-icon">🏘️</div>
-      <div class="unit-meta">
-        <div class="unit-label">Unit 1</div>
-        <div class="unit-title">My Community</div>
-      </div>
-    </div>
-    <div class="lessons-grid">
-
-      <a class="lesson-card" href="https://docs.google.com/document/d/1O6_-rz5eNxey9u-n8fpWnbYvkwwCx6TCJDG2ElS-4I0/edit?usp=drive_link" target="_blank">
-        <div class="lesson-num">1.1.1</div>
-        <div class="lesson-text">
-          <div class="lesson-title">Let's Be Friends</div>
-          <div class="lesson-subtitle">Seamos amigos</div>
-        </div>
-      </a>
-
-      <a class="lesson-card" href="https://docs.google.com/document/d/1te_tn-HvsYe7Hk6r0e3tdtksNdz_WuEgrjmOYWyalW8/edit?usp=drive_link" target="_blank">
-        <div class="lesson-num">1.1.2</div>
-        <div class="lesson-text">
-          <div class="lesson-title">Where I Live: Places in my Community</div>
-          <div class="lesson-subtitle">Lugares en mi comunidad</div>
-        </div>
-      </a>
-
-      <a class="lesson-card" href="https://docs.google.com/document/d/1kXDf4xFrvpfksr0Wq8a_-ozcHCXJojhjxBpLSpIHRfM/edit?usp=drive_link" target="_blank">
-        <div class="lesson-num">1.1.3</div>
-        <div class="lesson-text">
-          <div class="lesson-title">Why do Communities Need Rules?</div>
-          <div class="lesson-subtitle">¿Por qué necesitan reglas las comunidades?</div>
-        </div>
-      </a>
-
-      <a class="lesson-card" href="https://docs.google.com/document/d/1eoeCIS2QkSfRvpqtZCt7x_Yp_RqZt6kTYHybvgxL9B4/edit?usp=drive_link" target="_blank">
-        <div class="lesson-num">1.1.4</div>
-        <div class="lesson-text">
-          <div class="lesson-title">The Constitution &amp; Citizenship</div>
-          <div class="lesson-subtitle">La Constitución y la cuidadanía</div>
-        </div>
-      </a>
-
-    </div>
-  </div>
-
-  <!-- Arrow 1→2 -->
-  <div class="arrow-connector">
-    <div class="arrow-line arrow-1"></div>
-    <div class="arrow-1"><div class="arrow-head"></div></div>
-  </div>
-
-  <!-- ═══════════ UNIT 2 ═══════════ -->
-  <div class="unit-block unit-2">
     <div class="unit-header">
       <div class="unit-icon">🤝</div>
       <div class="unit-meta">
-        <div class="unit-label">Unit 2</div>
-        <div class="unit-title">Teamwork</div>
+        <div class="unit-number">Unit 1</div>
+        <div class="unit-title">Social Contract</div>
       </div>
     </div>
     <div class="lessons-grid">
-
-      <a class="lesson-card" href="https://docs.google.com/document/d/1c4TvSa4Yu6T1Ds4ZBzSVHS5NwWl6slCXqP2Hkr-K91I/edit?usp=drive_link" target="_blank">
-        <div class="lesson-num">1.2.1</div>
+      <a class="lesson-card" href="https://docs.google.com/document/d/1F75JerlgYVLk_gU9nvjUpAeG5cZVER5EPVHXM1vPI0U/edit?usp=drive_link" target="_blank">
+        <div class="lesson-num">2.1.1</div>
         <div class="lesson-text">
-          <div class="lesson-title">Families Use Teamwork</div>
-          <div class="lesson-subtitle">Las familias trabajan como equipos</div>
+          <div class="lesson-title">Our School is a Family</div>
+          <div class="lesson-subtitle">Nuestra escuela es una familia</div>
         </div>
       </a>
-
-      <a class="lesson-card" href="https://docs.google.com/document/d/12A7EvFWl8octYWwTSOL8Nuks70eGTcp7Tiho6a8mPnU/edit?usp=drive_link" target="_blank">
-        <div class="lesson-num">1.2.2</div>
+      <a class="lesson-card" href="https://docs.google.com/document/d/1tIDdyPOhyl8lFfDLYkLjd65s3x64rQu-7ESf0UOS_QA/edit?usp=drive_link" target="_blank">
+        <div class="lesson-num">2.1.2</div>
         <div class="lesson-text">
-          <div class="lesson-title">Teamwork is Powerful</div>
-          <div class="lesson-subtitle">Trabajar en equipo es poderoso</div>
+          <div class="lesson-title">Creating a Social Contract</div>
+          <div class="lesson-subtitle">Crear un contrato social</div>
         </div>
       </a>
-
-      <a class="lesson-card" href="https://docs.google.com/document/d/18BDR4yHt1dQLSRmRgXH4g7xTXDTbvxDE6TtENouxxPo/edit?usp=drive_link" target="_blank">
-        <div class="lesson-num">1.2.3</div>
+      <a class="lesson-card" href="https://docs.google.com/document/d/1RgbIqdiDFWmTDx68WITNKUhx5ls3ZbE9VKYfhQPZM1o/edit?usp=drive_link" target="_blank">
+        <div class="lesson-num">2.1.3</div>
         <div class="lesson-text">
-          <div class="lesson-title">Children Use Teamwork</div>
-          <div class="lesson-subtitle">Los niños alcanzan más en un equipo</div>
+          <div class="lesson-title">Creating an Agreement for Our Community</div>
+          <div class="lesson-subtitle">Crear un contrato para nuestra comunidad</div>
         </div>
       </a>
-
-      <a class="lesson-card" href="https://docs.google.com/document/d/1SLYYR7bCCeuuh5xaX__63hQ9Cn72YIuIi_tX2sbFIlY/edit?usp=drive_link" target="_blank">
-        <div class="lesson-num">1.2.4</div>
-        <div class="lesson-text">
-          <div class="lesson-title">Using Teamwork to Protect What's Important</div>
-        </div>
-      </a>
-
-      <a class="lesson-card" href="https://docs.google.com/document/d/12q8L9-APAuxDSegElwD1G1x-wR_30BwIla29YEt7bps/edit?usp=drive_link" target="_blank">
-        <div class="lesson-num">1.2.5</div>
-        <div class="lesson-text">
-          <div class="lesson-title">Teamwork Connects Us</div>
-        </div>
-      </a>
-
-      <a class="lesson-card" href="https://docs.google.com/document/d/1Kdd1hDVx5Alf03UuRMqO-oETBnFc0YK_9Ble5a7xzss/edit?usp=drive_link" target="_blank">
-        <div class="lesson-num">1.2.6</div>
-        <div class="lesson-text">
-          <div class="lesson-title">Changing the Future with Teamwork</div>
-        </div>
-      </a>
-
     </div>
   </div>
 
-  <!-- Arrow 2→3 -->
-  <div class="arrow-connector">
-    <div class="arrow-line arrow-2"></div>
-    <div class="arrow-2"><div class="arrow-head"></div></div>
+  <div class="arrow-connector"><div class="arrow-line"></div><div class="arrow-head"></div></div>
+
+  <!-- ═══ UNIT 2 ═══ -->
+  <div class="unit-block unit-2">
+    <div class="unit-header">
+      <div class="unit-icon">🏕️</div>
+      <div class="unit-meta">
+        <div class="unit-number">Unit 2</div>
+        <div class="unit-title">First Communities</div>
+      </div>
+    </div>
+    <div class="lessons-grid">
+      <a class="lesson-card" href="https://docs.google.com/document/d/1UTrKsPz3B68nn3QlmUC008SsfOfe7RHKC8yGhwPvXUY/edit?usp=drive_link" target="_blank">
+        <div class="lesson-num">2.2.1</div>
+        <div class="lesson-text">
+          <div class="lesson-title">Our Community: First People</div>
+        </div>
+      </a>
+      <a class="lesson-card" href="https://docs.google.com/document/d/11OycxLu-V3OmHp_STDhPphipU2IWHINcQqlovdwDXsY/edit?usp=drive_link" target="_blank">
+        <div class="lesson-num">2.2.2</div>
+        <div class="lesson-text">
+          <div class="lesson-title">Our Community: The Cowlitz People</div>
+        </div>
+      </a>
+      <a class="lesson-card" href="https://docs.google.com/document/d/1-hv0loWYT0G-2JzSTN7l2zisPOkBU0Xc-QHmJj15AkY/edit?usp=drive_link" target="_blank">
+        <div class="lesson-num">2.2.3</div>
+        <div class="lesson-text">
+          <div class="lesson-title">Our Community: The Cowlitz People Part 2</div>
+        </div>
+      </a>
+      <a class="lesson-card" href="https://docs.google.com/document/d/1ZooUkOostBPdZYWK4EtHYbs1JgJ1LOT2nn2V-IitfxM/edit?usp=drive_link" target="_blank">
+        <div class="lesson-num">2.2.4</div>
+        <div class="lesson-text">
+          <div class="lesson-title">Our Community: The Pacific Northwest</div>
+        </div>
+      </a>
+      <a class="lesson-card" href="https://docs.google.com/document/d/1wetXUPUoFYhLmL3XC4Sg1TO5HOgnw1eBNW0djVxICo8/edit?usp=drive_link" target="_blank">
+        <div class="lesson-num">2.2.5</div>
+        <div class="lesson-text">
+          <div class="lesson-title">Our Community: A River's Gift</div>
+        </div>
+      </a>
+    </div>
   </div>
 
-  <!-- ═══════════ UNIT 3 ═══════════ -->
+  <div class="arrow-connector"><div class="arrow-line"></div><div class="arrow-head"></div></div>
+
+  <!-- ═══ UNIT 3 ═══ -->
   <div class="unit-block unit-3">
     <div class="unit-header">
-      <div class="unit-icon">🌍</div>
+      <div class="unit-icon">🗺️</div>
       <div class="unit-meta">
-        <div class="unit-label">Unit 3</div>
-        <div class="unit-title">Families &amp; Global Connections</div>
+        <div class="unit-number">Unit 3</div>
+        <div class="unit-title">Basic Map Skills</div>
       </div>
     </div>
     <div class="lessons-grid">
-
-      <a class="lesson-card" href="https://docs.google.com/document/d/1PFBesnTh_wVwkC3v_jlKUnSs0t1tId1Ih4QpETAT4CI/edit?usp=drive_link" target="_blank">
-        <div class="lesson-num">1.3.1</div>
+      <a class="lesson-card" href="https://docs.google.com/document/d/1kgADH1CXSIcx6bcNwLNVkMExQ3eHgVSWtGQ5apmYGTA/edit?usp=drive_link" target="_blank">
+        <div class="lesson-num">2.3.1</div>
         <div class="lesson-text">
-          <div class="lesson-title">Wants and Needs Within Families</div>
-          <div class="lesson-subtitle">Deseos y nececidades de las familias</div>
+          <div class="lesson-title">Basic Mapping Skills</div>
+          <div class="lesson-subtitle">Destrezas de maps</div>
         </div>
       </a>
-
-      <a class="lesson-card" href="https://docs.google.com/document/d/1y6RdreCDnTS6k2BtkpyxlvndksCx6ocUmgdVmzPi__Q/edit?usp=drive_link" target="_blank">
-        <div class="lesson-num">1.3.2</div>
+      <a class="lesson-card" href="https://docs.google.com/document/d/1TE_5br0rMGFfhM-pCEpCyNtwSFPIYlL-ohDVa2Fj9lI/edit?usp=drive_link" target="_blank">
+        <div class="lesson-num">2.3.2</div>
         <div class="lesson-text">
-          <div class="lesson-title">Why Do Families Move? Then</div>
-          <div class="lesson-subtitle">¿Por qué se mudan las familias? Antes</div>
+          <div class="lesson-title">Creating a Map</div>
+          <div class="lesson-subtitle">Crear un mapa</div>
         </div>
       </a>
-
-      <a class="lesson-card" href="https://docs.google.com/document/d/1qy5pTLDDJbucKeLvNVii69Ir-Qgb6z6QGzoHMBWbmzo/edit?usp=drive_link" target="_blank">
-        <div class="lesson-num">1.3.3</div>
+      <a class="lesson-card" href="https://docs.google.com/document/d/1OQUd4xNgjvVNobErL-MiB6vVvqKOakcu9YtSNLQTYm8/edit?usp=drive_link" target="_blank">
+        <div class="lesson-num">2.3.3</div>
         <div class="lesson-text">
-          <div class="lesson-title">Why Do Families Move? Now</div>
-          <div class="lesson-subtitle">¿Por qué se mudan las familias? Ahora</div>
+          <div class="lesson-title">Vancouver Then and Now</div>
+          <div class="lesson-subtitle">Vancouver Antes y Ahora</div>
         </div>
       </a>
+    </div>
+  </div>
 
-      <a class="lesson-card" href="https://docs.google.com/document/d/1fJpRWKy0F3iKeNZdeSSZsmJxXI9K-F1z1wqZC1T8g-A/edit?usp=drive_link" target="_blank">
-        <div class="lesson-num">1.3.4</div>
+  <div class="arrow-connector"><div class="arrow-line"></div><div class="arrow-head"></div></div>
+
+  <!-- ═══ UNIT 4 ═══ -->
+  <div class="unit-block unit-4">
+    <div class="unit-header">
+      <div class="unit-icon">🛒</div>
+      <div class="unit-meta">
+        <div class="unit-number">Unit 4</div>
+        <div class="unit-title">Goods &amp; Services</div>
+      </div>
+    </div>
+    <div class="lessons-grid">
+      <a class="lesson-card" href="https://docs.google.com/document/d/17SJaabHNKicBHjAdX4TBMwewyjdMHvuQb1tIJ4E6I4s/edit?usp=drive_link" target="_blank">
+        <div class="lesson-num">2.4.1</div>
         <div class="lesson-text">
-          <div class="lesson-title">In Between Homes</div>
-          <div class="lesson-subtitle">Entre hogares</div>
+          <div class="lesson-title">Creating the Context: Understanding Goods and Services</div>
+          <div class="lesson-subtitle">¿Qué son los bienes y servicios?</div>
         </div>
       </a>
+    </div>
+  </div>
 
-      <a class="lesson-card" href="https://docs.google.com/document/d/1uCBZaan0uyFGqnSe2ORmHINfwoqT97qOoiN6UJG5cWs/edit?usp=drive_link" target="_blank">
-        <div class="lesson-num">1.3.5</div>
+  <div class="arrow-connector"><div class="arrow-line"></div><div class="arrow-head"></div></div>
+
+  <!-- ═══ UNIT 5 ═══ -->
+  <div class="unit-block unit-5">
+    <div class="unit-header">
+      <div class="unit-icon">🏪</div>
+      <div class="unit-meta">
+        <div class="unit-number">Unit 5</div>
+        <div class="unit-title">Businesses Needed</div>
+      </div>
+    </div>
+    <div class="lessons-grid">
+      <a class="lesson-card" href="https://docs.google.com/document/d/1LH7r9Fi7qSpk0QVoQko8tizKqd-7XOSDLs1mCrcWAAk/edit?usp=sharing" target="_blank">
+        <div class="lesson-num">2.5.1</div>
         <div class="lesson-text">
-          <div class="lesson-title">Global Environments</div>
-          <div class="lesson-subtitle">Entornos globales</div>
+          <div class="lesson-title">Getting Ready for Opening Day: Finding My Business</div>
+          <div class="lesson-subtitle">Preparando para mi primer día: Descubriendo mi negocio</div>
         </div>
       </a>
+      <a class="lesson-card" href="https://docs.google.com/document/d/1opu6OfbDBkvU2CrptfPRnv20vyE475pV1X957bxC__8/edit?usp=sharing" target="_blank">
+        <div class="lesson-num">2.5.2</div>
+        <div class="lesson-text">
+          <div class="lesson-title">Building "Our Community": Creating the Perfect Place for Us!</div>
+          <div class="lesson-subtitle">Construir una comunidad: Crear un lugar perfecto para nosotros</div>
+        </div>
+      </a>
+      <a class="lesson-card" href="https://docs.google.com/document/d/1qtO9NJ4tD-P-WGffRj9nIQX085pBelhVQqeHTUTm-i0/edit?usp=sharing" target="_blank">
+        <div class="lesson-num">2.5.3</div>
+        <div class="lesson-text">
+          <div class="lesson-title">Applying for My Business License: Writing My Chamber of Commerce Letter</div>
+          <div class="lesson-subtitle">Aplicar para mi licensia de negocios: Escribir una carta a la Cámara de comercio</div>
+        </div>
+      </a>
+      <a class="lesson-card" href="https://docs.google.com/document/d/1_OZftuPXRhILGcv7QgIDnCGy7xrfWkLP-a-spRMKpKU/edit?usp=sharing" target="_blank">
+        <div class="lesson-num">2.5.4</div>
+        <div class="lesson-text">
+          <div class="lesson-title">Constructing Your Business</div>
+          <div class="lesson-subtitle">Construir tu negocio</div>
+        </div>
+      </a>
+    </div>
+  </div>
 
+  <div class="arrow-connector"><div class="arrow-line"></div><div class="arrow-head"></div></div>
+
+  <!-- ═══ UNIT 6 ═══ -->
+  <div class="unit-block unit-6">
+    <div class="unit-header">
+      <div class="unit-icon">🎭</div>
+      <div class="unit-meta">
+        <div class="unit-number">Unit 6</div>
+        <div class="unit-title">Creating the Characters</div>
+      </div>
+    </div>
+    <div class="lessons-grid">
+      <a class="lesson-card" href="https://docs.google.com/document/d/1Cz8-iNvhusa9F7DkK1W2bV9lLQ5qM9SivVcJIZZ8p7g/edit?usp=sharing" target="_blank">
+        <div class="lesson-num">2.6.1</div>
+        <div class="lesson-text">
+          <div class="lesson-title">Creating the Characters</div>
+          <div class="lesson-subtitle">Creando los Personajes</div>
+        </div>
+      </a>
+      <a class="lesson-card" href="https://docs.google.com/document/d/1onS_9J-huf__778qKNGpAGmnEMvJ-xGeokzhCDBI1yo/edit?usp=sharing" target="_blank">
+        <div class="lesson-num">2.6.2</div>
+        <div class="lesson-text">
+          <div class="lesson-title">Creating the Characters Part 2</div>
+          <div class="lesson-subtitle">Creando los Personajes</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="arrow-connector"><div class="arrow-line"></div><div class="arrow-head"></div></div>
+
+  <!-- ═══ UNIT 7 ═══ -->
+  <div class="unit-block unit-7">
+    <div class="unit-header">
+      <div class="unit-icon">🤲</div>
+      <div class="unit-meta">
+        <div class="unit-number">Unit 7</div>
+        <div class="unit-title">Providing Goods &amp; Services</div>
+      </div>
+    </div>
+    <div class="lessons-grid">
+      <a class="lesson-card" href="https://docs.google.com/document/d/1ySSDoDfNV2JGvNdd0uA9tX4UWvAbzskhfQQXrkv3LpA/edit?usp=sharing" target="_blank">
+        <div class="lesson-num">2.7.1</div>
+        <div class="lesson-text">
+          <div class="lesson-title">Providing Goods and Services</div>
+          <div class="lesson-subtitle">Provisión de Bienes y Servicios</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="arrow-connector"><div class="arrow-line"></div><div class="arrow-head"></div></div>
+
+  <!-- ═══ UNIT 8 ═══ -->
+  <div class="unit-block unit-8">
+    <div class="unit-header">
+      <div class="unit-icon">📣</div>
+      <div class="unit-meta">
+        <div class="unit-number">Unit 8</div>
+        <div class="unit-title">Advertising</div>
+      </div>
+    </div>
+    <div class="lessons-grid">
+      <a class="lesson-card" href="https://docs.google.com/document/d/1tSxoj01RCapfct8osKC_uAVOvObYaBPTB30rJXn7YQM/edit?usp=sharing" target="_blank">
+        <div class="lesson-num">2.8.1</div>
+        <div class="lesson-text">
+          <div class="lesson-title">Creating the Advertising</div>
+          <div class="lesson-subtitle">La Publicidad</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="arrow-connector"><div class="arrow-line"></div><div class="arrow-head"></div></div>
+
+  <!-- ═══ UNIT 9 ═══ -->
+  <div class="unit-block unit-9">
+    <div class="unit-header">
+      <div class="unit-icon">🔍</div>
+      <div class="unit-meta">
+        <div class="unit-number">Unit 9</div>
+        <div class="unit-title">Problem &amp; Solution</div>
+      </div>
+    </div>
+    <div class="lessons-grid">
+      <a class="lesson-card" href="https://docs.google.com/document/d/1JT4cV7TttPoyv4BnVSe0HkRe5IlunTc4D_lv7B1jGe4/edit?usp=drive_link" target="_blank">
+        <div class="lesson-num">2.9.1</div>
+        <div class="lesson-text">
+          <div class="lesson-title">Problem and Solution Read Aloud</div>
+          <div class="lesson-subtitle">Lectura en voz alta: Problema y solucion</div>
+        </div>
+      </a>
+      <a class="lesson-card" href="https://docs.google.com/document/d/1V_pWQrJz6UrBzxteeslORFDjm6yTCWMl0YiEr18whFY/edit?usp=drive_link" target="_blank">
+        <div class="lesson-num">2.9.2</div>
+        <div class="lesson-text">
+          <div class="lesson-title">Community Problems</div>
+          <div class="lesson-subtitle">Problemas de Comunidad</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="arrow-connector"><div class="arrow-line"></div><div class="arrow-head"></div></div>
+
+  <!-- ═══ UNIT 10 ═══ -->
+  <div class="unit-block unit-10">
+    <div class="unit-header">
+      <div class="unit-icon">🏗️</div>
+      <div class="unit-meta">
+        <div class="unit-number">Unit 10</div>
+        <div class="unit-title">Building Community Spaces</div>
+      </div>
+    </div>
+    <div class="lessons-grid">
+      <a class="lesson-card" href="https://docs.google.com/document/d/1p8Kymlgj2Rw7b62AQl_em3eyX_p4QVRACvqXmSmzfHk/edit?usp=drive_link" target="_blank">
+        <div class="lesson-num">2.10.1</div>
+        <div class="lesson-text">
+          <div class="lesson-title">Our Community: Building Community Spaces</div>
+          <div class="lesson-subtitle">Nuestra Comunidad: Construyendo Espacio Públicos</div>
+        </div>
+      </a>
+      <a class="lesson-card" href="https://docs.google.com/document/d/1fmDEMEF_uSCDa_1vPX5WRAtL7q3Mpj9yrZa6Id-eadY/edit?usp=drive_link" target="_blank">
+        <div class="lesson-num">2.10.2</div>
+        <div class="lesson-text">
+          <div class="lesson-title">Our Community: Building Community Spaces Part 2</div>
+          <div class="lesson-subtitle">Nuestra Comunidad: Construyendo Espacios Públicos</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="arrow-connector"><div class="arrow-line"></div><div class="arrow-head"></div></div>
+
+  <!-- ═══ UNIT 11 ═══ -->
+  <div class="unit-block unit-11">
+    <div class="unit-header">
+      <div class="unit-icon">🎉</div>
+      <div class="unit-meta">
+        <div class="unit-number">Unit 11</div>
+        <div class="unit-title">Celebrating Our Community</div>
+      </div>
+    </div>
+    <div class="lessons-grid">
+      <a class="lesson-card" href="https://docs.google.com/document/d/1BHEYsud4U0YOhRcpobep0WReVZqCoOwgTEkCKiXV_Ew/edit?usp=drive_link" target="_blank">
+        <div class="lesson-num">2.11.1</div>
+        <div class="lesson-text">
+          <div class="lesson-title">Our Community: Creating the Ending</div>
+          <div class="lesson-subtitle">Nuestra Comunidad: Creando el final</div>
+        </div>
+      </a>
     </div>
   </div>
 
 </div>
 
-<div class="footer">1st Grade Social Studies · 3 Units · 15 Lessons &nbsp;|&nbsp; Click any lesson card to open the lesson</div>
+<div class="footer">2nd Grade Social Studies · 11 Units · 22 Lessons &nbsp;|&nbsp; Click any lesson card to open the lesson plan</div>
 
 </body>
 </html>
